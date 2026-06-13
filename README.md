@@ -1,13 +1,10 @@
 # BMW Morph
 
-The ultimate BMW Linux Head Unit hacking tool that combines features from various BMW apps.
+The ultimate BMW Linux head unit hacking tool that morphs features from BimmerCode, BimmerLink and more.
 
 ## Features
-- Root access tools
-- Feature morphing from other apps
-- Custom dashboards
+- SSH / ADB access to head unit
+- CAN bus integration
+- Android companion app
 
-## Setup
-Clone and run the scripts.
-
-**Warning: For educational purposes only. Use at your own risk.**
+**For educational purposes only.**
