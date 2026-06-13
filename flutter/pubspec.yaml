@@ -1,0 +1,18 @@
+name: bmw_morph
+description: BMW Morph - Ultimate BMW Linux Head Unit Hacker & Feature Morpher
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  http: ^1.0.0
+  flutter_blue_plus: ^1.0.0 # For Bluetooth/CAN potential
+  # Add more for SSH, etc.
+
+flutter:
+  uses-material-design: true
