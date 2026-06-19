@@ -1,47 +1,25 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const BMW MorphApp());
-}
+void main() => runApp(BMWMorphApp());
 
 class BMWMorphApp extends StatelessWidget {
-  const BMWMorphApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BMW Morph',
+      title: 'BMW Morph E60',
       theme: ThemeData.dark(),
-      home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('BMW Morph - Head Unit Hacker')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('Connect to Linux Head Unit', style: TextStyle(fontSize: 24)),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Initiate SSH Connection'),
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Morph Features (BimmerCode Style)'),
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('CAN Bus Monitor'),
-            ),
-          ],
+      home: Scaffold(
+        appBar: AppBar(title: Text('BMW Morph - E60 CCC N52')),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('E60 CCC LCI N52 Hacker Dashboard', style: TextStyle(fontSize: 24)),
+              ElevatedButton(onPressed: () {}, child: Text('Connect OBD Bluetooth')),
+              ElevatedButton(onPressed: () {}, child: Text('Morph N52 Power')),
+              ElevatedButton(onPressed: () {}, child: Text('CCC Coding Modules')),
+            ],
+          ),
         ),
       ),
     );
